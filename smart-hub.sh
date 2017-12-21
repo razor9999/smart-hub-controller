@@ -79,7 +79,7 @@ case "$1" in
 
 
 
-    start|stop)
+    stop)
 
         do_${1}
 
@@ -87,7 +87,7 @@ case "$1" in
 
 
 
-    restart|reload|force-reload)
+    start|restart|reload|force-reload)
 
         do_stop
 
