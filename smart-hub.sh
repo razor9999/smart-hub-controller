@@ -67,7 +67,7 @@ do_stop () {
 
     log_daemon_msg "Stopping system $DAEMON_NAME daemon"
 
-    start-stop-daemon --stop --pidfile $PIDFILE --retry 10
+    start-stop-daemon --stop --pidfile $PIDFILE  --retry=TERM/5/KILL/1 --verbose
 
     log_end_msg $?
 
