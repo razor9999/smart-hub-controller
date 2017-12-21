@@ -23,7 +23,7 @@
 # Change the next 3 lines to suit where you install your script and what you want to call it
 
 DIR=/etc/smart-hub
-DAEMON=$DIR/smart-hub-controller
+DAEMON=$DIR/smart-hub
 
 DAEMON_NAME=smart-hub
 
