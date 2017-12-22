@@ -2,7 +2,7 @@
 
 ### BEGIN INIT INFO
 
-# Provides:          myservice
+# Provides:          smart-hub.cloud
 
 # Required-Start:    $remote_fs $syslog
 
@@ -81,15 +81,21 @@ case "$1" in
 
     stop)
 
-        do_${1}
+        do_stop
 
         ;;
 
 
 
-    start|restart|reload|force-reload)
+    restart|reload|force-reload)
 
         do_stop
+
+        do_start
+
+        ;;
+
+    start)
 
         do_start
 
